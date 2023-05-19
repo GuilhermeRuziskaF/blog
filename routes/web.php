@@ -18,6 +18,11 @@ Route::get('/', function () {
     return view('blog.index');
 })->name("blog.index");
 
+/* Página Sobre */
+Route::get('/sobre', function(){
+    return view('blog.pages.sobre');
+})->name('blog.sobre');
+
 
 Route::get('/post', function () {
     return view('blog.post');

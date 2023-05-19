@@ -59,7 +59,7 @@
                         </ul>
                     </li>
 
-                    <li><a href="about.html">Sobre</a></li>
+                    <li><a href="{{route("blog.sobre")}}">Sobre</a></li>
 
                     <li><a href="contact.html">Contato</a></li>
                 </ul>
