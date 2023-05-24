@@ -14,6 +14,15 @@ use Spatie\FlareClient\View;
 |
 */
 
+/* Limpa cahce , rotas e configurações */
+route::get('/limpa', function () {
+    Artisan::call('cache:clear');
+    Artisan::call('route:cache');
+    Artisan::call('config:clear');
+    Artisan::call('view:clear');
+    return "Tudo limpo pode voltar a página anterior";
+});
+
 Route::get('/', function () {
     return view('blog.index');
 })->name("blog.index");
@@ -22,6 +31,11 @@ Route::get('/', function () {
 Route::get('/sobre', function(){
     return view('blog.pages.sobre');
 })->name('blog.sobre');
+
+/* Pagina contato */
+Route::get('/contato', function(){
+    return view('blog.pages.contato');
+})->name('blog.contato');
 
 
 Route::get('/post', function () {

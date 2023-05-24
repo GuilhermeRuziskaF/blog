@@ -61,7 +61,7 @@
 
                     <li><a href="{{route("blog.sobre")}}">Sobre</a></li>
 
-                    <li><a href="contact.html">Contato</a></li>
+                    <li><a href="{{route('blog.contato')}}">Contato</a></li>
                 </ul>
             </nav><!-- .navbar -->
 
